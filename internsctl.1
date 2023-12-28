@@ -1,0 +1,47 @@
+.\" Man page for internsctl
+.TH INTERNSCTL 1 "December 2023" "v0.1.0" "internsctl manual"
+.SH NAME
+INTERNSCTL \- a custom command for Xenon Stack
+.SH SYNOPSIS
+.B internsctl
+.RI [ options ]
+.SH DESCRIPTION
+This manual page documents the usage and options of the internsctl command.
+.PP
+The \fBinternsctl\fP command is a custom utility designed for the Xenon Stack. It provides various options for managing and interacting with the system.
+.SH OPTIONS
+.TP
+.B \-v, \-\-version
+Display the version of internsctl.
+.TP
+.B \-h, \-\-help
+Display help and usage information.
+.PP
+.SH CPU USAGE
+.TP
+.B \-c, \-\-cpu getinfo
+Display CPU information similar to the 'lscpu' command.
+.PP
+.SH MEMORY USAGE
+.TP
+.B \-m, \-\-memory getinfo
+Display memory information.
+.SH EXAMPLES
+Display the version of internsctl:
+.nf
+.B internsctl \-\-version
+.fi
+.PP
+Display CPU information:
+.nf
+.B internsctl \-\-cpu getinfo
+.fi
+.PP
+Display memory information:
+.nf
+.B internsctl \-\-memory getinfo
+.fi
+.SH SEE ALSO
+.BR your_other_command (1)
+.SH AUTHOR
+Satyam Kumar
